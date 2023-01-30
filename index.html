@@ -1,0 +1,39 @@
+  <!DOCTYPE html>
+  <html>
+
+  <head>
+      <title>Recipe Finder</title>
+<link rel="stylesheet" type="text/css" href="{{ url_for('styles') }}">
+
+
+  </head>
+
+  <body>
+      <h1>Recipe Finder</h1>
+
+      <form action="" method="get">
+          <input type="text" name="search" placeholder="Search Recipes">
+          <input type="submit" value="Search">
+      </form>
+
+      <h2>Categories</h2>
+      <ul>
+          <li><a href="#title">Title</a></li>
+          <li><a href="#link">Link</a></li>
+          <li><a href="#image">Image</a></li>
+          <li><a href="#ingredients">Ingredients</a></li>
+          <li><a href="#content">Content</a></li>
+      </ul>
+
+      <h2>Recipes</h2>
+      <div class="recipe">
+          <h3 id="title">Recipe Title</h3>
+          <a href="#" id="link">Link to recipe</a>
+          <img src="image.jpg" alt="recipe image" id="image">
+          <p id="ingredients">Ingredients: ingredient1, ingredient2, ingredient3</p>
+          <p id="content">Recipe content goes here</p>
+      </div>
+
+  </body>
+
+  </html>
